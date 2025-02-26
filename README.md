@@ -206,8 +206,9 @@ Then extract in `pretrained_models/` dir.
 ### Train a model 
 Start the training process with:
 ```
-python train.py trainer.max_epochs=10000 +split='complex/train' run_dir='outputs/mdm-smpl_splitcomplex_humanml3d/logs/checkpoints/'
+python train.py trainer.max_epochs=10000 +split='train' run_dir='outputs/mdm-smpl_clip_smplrifke_humanml3d/
 ```
+
 It will save the outputs to the folder specified by the argument `run_dir`. The number of diffusion steps is defined by the argument `trainer.max_epochs`. \
 The default dataset is HumanML3D, it can be changed to KitML using the argument `dataset=kitml`. To resume a training it's possible to use the argument `resume_dir` and `ckpt`, where the first specify the base directory where the config of the model are saved and the latter specify the path of the *.ckpt* file.
 
