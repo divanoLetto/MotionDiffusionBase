@@ -139,10 +139,8 @@ dmypy.json
 .pyre/
 
 pretrained_models/*
-
 mtt_2/*
 multirun/*
-
 TMR/datasets/*
 timelines_never_seen/backwards_timeline.txt
 mtt/*
