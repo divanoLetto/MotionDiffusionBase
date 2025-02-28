@@ -89,7 +89,17 @@ The error `ImportError: cannot import name 'bool' from 'numpy'` may occur depend
 
 <details><summary>Click to expand</summary>
 
-The motions all come from the AMASS dataset. Please download all "SMPL-H G" motions from the [AMASS website](https://amass.is.tue.mpg.de/download.php) and place them in the folder ``datasets/motions/AMASS``.
+The motions all come from the AMASS dataset. There is two ways to acquire the motions:
+
+<details><summary> 1) Download from drive</summary>
+
+Click on this [link](https://drive.usercontent.google.com/download?id=1MRr5dmOZq-FtHOzfCicGegsvkCZkQ-ML&export=download) and download from your web browser. Extract the ``motion.zip`` into the ``datasets`` folder.
+
+</details>
+
+<details><summary> 2) Download the original files and process</summary>
+
+Please download all "SMPL-H G" motions from the [AMASS website](https://amass.is.tue.mpg.de/download.php) and place them in the folder ``datasets/motions/AMASS``.
 
 <details><summary>It should look like this:</summary>
 
@@ -154,7 +164,9 @@ This command will use the joints + SMPL pose parameters (in 6D format) to create
 
 </details>
 
-The dataset folder should look like this:
+</details>
+
+At the end the dataset folder should look like this:
 ```bash
 datasets/motions
 ├── AMASS
